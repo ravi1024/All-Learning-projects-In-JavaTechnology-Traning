@@ -1,0 +1,20 @@
+#my:
+#  greetings: Hello World
+
+app:
+  name: My app
+  description: Welcome to ${app.name}
+
+#Three value annotation tricks
+my:
+  greetings: Hello World
+  list:
+    value: one,two,three
+
+db:
+  value: "{Test-ConnectionString: 'http://____', UserName: 'user', Password: 'pass'}"
+  host: 127.0.0.1
+  port: 9191
+
+
+management.endpoints.web.exposure.include: "*"

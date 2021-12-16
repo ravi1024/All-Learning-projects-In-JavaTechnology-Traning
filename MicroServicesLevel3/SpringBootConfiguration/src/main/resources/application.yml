@@ -1,0 +1,31 @@
+#my:
+#  greetings: Hello World
+
+app:
+    name: My app
+    description: Welcome to ${app.name}
+
+#Three value annotation tricks
+my:
+   greetings: Hello World
+   list:
+        value: one,two,three
+
+db:
+   value: "{ConnectionString: 'http://____', UserName: 'user', Password: 'pass'}"
+   host: 127.0.0.1
+   port: 8080
+
+
+management.endpoints.web.exposure.include: "*"
+
+#Spring profiles
+spring:
+  profiles:
+    active: test
+  application:
+    name: SpringBootConfiguration
+
+
+#Setting up spring cloud config client
+spring.config.import.configserver: http://localhost:8888

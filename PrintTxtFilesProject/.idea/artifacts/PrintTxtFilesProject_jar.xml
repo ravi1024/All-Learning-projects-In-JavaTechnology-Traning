@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PrintTxtFilesProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PrintTxtFilesProject_jar</output-path>
+    <root id="archive" name="PrintTxtFilesProject.jar">
+      <element id="module-output" name="PrintTxtFilesProject" />
+    </root>
+  </artifact>
+</component>
