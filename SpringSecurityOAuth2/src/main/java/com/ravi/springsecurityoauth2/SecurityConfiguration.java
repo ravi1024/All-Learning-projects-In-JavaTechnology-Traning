@@ -1,7 +1,9 @@
 package com.ravi.springsecurityoauth2;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
 
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
@@ -12,4 +14,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .and()
                 .oauth2Client();
     }
+
+
+//    CommonOAuth2Provider commonOAuth2Provider = new CommonOAuth2Provider();
 }
+
